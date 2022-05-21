@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameFragment">
+
+
+    <ImageButton
+        android:id="@+id/ibtn_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:contentDescription="@string/content_cell"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toTopOf="@+id/ibtn_4"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_4"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/ibtn_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:contentDescription="@string/content_cell"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_1"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_5"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_5"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_1" />
+
+    <ImageButton
+        android:id="@+id/ibtn_7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:contentDescription="@string/content_cell"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_4"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_4"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn_4" />
+
+    <ImageButton
+        android:id="@+id/ibtn_8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:contentDescription="@string/content_cell"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_7"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_5"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_5"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_7" />
+
+    <ImageButton
+        android:id="@+id/ibtn_6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:contentDescription="@string/content_cell"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_7"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_3"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_3" />
+
+    <ImageButton
+        android:id="@+id/ibtn_0"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:contentDescription="@string/content_cell"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_1"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_3"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_3"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_1" />
+
+    <ImageButton
+        android:id="@+id/ibtn_4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:contentDescription="@string/content_cell"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibtn_5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:contentDescription="@string/content_cell"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_4"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_4"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_4" />
+
+    <ImageButton
+        android:id="@+id/ibtn_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:contentDescription="@string/content_cell"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_4"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_4"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_4" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/ibtn_4"
+        app:layout_constraintEnd_toEndOf="@id/ibtn_2"
+        app:layout_constraintStart_toStartOf="@id/ibtn_0" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/ibtn_4"
+        app:layout_constraintEnd_toEndOf="@id/ibtn_2"
+        app:layout_constraintStart_toStartOf="@id/ibtn_0" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/ibtn_7"
+        app:layout_constraintStart_toStartOf="@id/ibtn_4"
+        app:layout_constraintTop_toTopOf="@id/ibtn_1" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/ibtn_7"
+        app:layout_constraintStart_toEndOf="@id/ibtn_4"
+        app:layout_constraintTop_toTopOf="@id/ibtn_1" />
+
+    <TextView
+        android:id="@+id/lbl_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:background="?android:colorBackground"
+        android:padding="18dp"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="A győztes: ...." />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
