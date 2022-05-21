@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameFragment">
+
+
+    <ImageButton
+        android:id="@+id/ibtn_top_center_game_fragment"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toTopOf="@+id/ibtn_center_center_game_fargment"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_center_center_game_fargment"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_center_center_game_fargment"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibtn_top_right_game_fragment"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_top_center_game_fragment"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_center_right_game_fragment"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_center_right_game_fragment"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_top_center_game_fragment" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_center_center_game_fargment"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_center_center_game_fargment"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn_center_center_game_fargment" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_center_right_game_fragment"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_center_right_game_fragment"
+        app:layout_constraintTop_toTopOf="@+id/imageButton7" />
+
+    <ImageButton
+        android:id="@+id/ibtn_bottom_left_game_fragment"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_center_left_ame_fragment"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_center_left_ame_fragment"
+        app:layout_constraintTop_toTopOf="@+id/imageButton7" />
+
+    <ImageButton
+        android:id="@+id/ibtn_top_left_game_fragment"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_top_center_game_fragment"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_center_left_ame_fragment"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_center_left_ame_fragment"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_top_center_game_fragment" />
+
+    <ImageButton
+        android:id="@+id/ibtn_center_center_game_fargment"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibtn_center_right_game_fragment"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_center_center_game_fargment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_center_center_game_fargment"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_center_center_game_fargment" />
+
+    <ImageButton
+        android:id="@+id/ibtn_center_left_ame_fragment"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_baseline_crop_free_24"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_center_center_game_fargment"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_center_center_game_fargment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_center_center_game_fargment" />
+</androidx.constraintlayout.widget.ConstraintLayout>
