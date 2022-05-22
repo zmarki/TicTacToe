@@ -1,5 +1,6 @@
 package hu.marzo.tictactoekmm
 
+import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -23,9 +24,14 @@ class GameViewModel : ViewModel() {
      *
      * @param position: The button clicked
      */
-    fun positionClicked(position: Position){
-        board.setState(position, PositionState.Circle)
-        updateBoard()
+    fun positionClicked(position: Position) {
+        if (board.getState(position) == PositionState.Empty && board.boardState == BoardState.INCOMPLETE) {
+            board.setState(position, PositionState.Circle)
+            updateBoard()
+            if (board.boardState == BoardState.INCOMPLETE) {
+                randomTurn()
+            }
+        }
     }
 
     /**
@@ -36,6 +42,17 @@ class GameViewModel : ViewModel() {
         updateBoard()
     }
 
+    /**
+     * Computer's random step
+     */
+    private fun randomTurn() {
+        do {
+            val pos = Position.values().random()
+            val placedSuccessfully = board.setState(pos, PositionState.Cross)
+        } while (!placedSuccessfully)
+
+        updateBoard()
+    }
 
 
 }
